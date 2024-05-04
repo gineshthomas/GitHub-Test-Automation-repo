@@ -1,0 +1,5 @@
+StepDef\TestRunner.class
+pageFactory\ListAnItemPage_PF.class
+pageFactory\SearchComputersPage_PF.class
+pageFactory\LoginPage_PF.class
+StepDef\TradeMeAppSteps.class

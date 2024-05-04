@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>TradeMeAppExercise</td>
+                          <td>1</td>
+                        <td>03 May 2024, 22:38</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_clothing_fashion_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_men_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_next_button()</td>
+                <td>10</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_pickup_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_shipping_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_start_listing_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.click_top_shirts_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="1000200">001ms</td>
+                <td class="duration" data-value="500100">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_choose_category_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_general_item_link()</td>
+                <td>2</td>
+                <td class="duration" data-value="122000400">122ms</td>
+                <td class="duration" data-value="61000200">061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_help_link_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2351449400">2s 351ms</td>
+                <td class="duration" data-value="2351449400">2s 351ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_info_link_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="698714700">698ms</td>
+                <td class="duration" data-value="698714700">698ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_link_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2223357100">2s 223ms</td>
+                <td class="duration" data-value="2223357100">2s 223ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_login_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="42247700">042ms</td>
+                <td class="duration" data-value="42247700">042ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_navigate_link()</td>
+                <td>3</td>
+                <td class="duration" data-value="15514107500">15s 514ms</td>
+                <td class="duration" data-value="5171369166">5s 171ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_click_search_button()</td>
+                <td>4</td>
+                <td class="duration" data-value="254318300">254ms</td>
+                <td class="duration" data-value="63579575">063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_captcha_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="60515300">060ms</td>
+                <td class="duration" data-value="60515300">060ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_checkbox_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="29097900">029ms</td>
+                <td class="duration" data-value="29097900">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_create_account_heading(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="25658200">025ms</td>
+                <td class="duration" data-value="25658200">025ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_declaration_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="27001800">027ms</td>
+                <td class="duration" data-value="27001800">027ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_email_field_error(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="745999000">745ms</td>
+                <td class="duration" data-value="745999000">745ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_email_field_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="33788100">033ms</td>
+                <td class="duration" data-value="33788100">033ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_forgot_password_heading(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="32816900">032ms</td>
+                <td class="duration" data-value="32816900">032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_heading_text(java.lang.String)</td>
+                <td>4</td>
+                <td class="duration" data-value="168724300">168ms</td>
+                <td class="duration" data-value="42181075">042ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_help_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="26657300">026ms</td>
+                <td class="duration" data-value="26657300">026ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_info_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="28100000">028ms</td>
+                <td class="duration" data-value="28100000">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_link_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="28813500">028ms</td>
+                <td class="duration" data-value="28813500">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_logging_in_heading(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="35000000">035ms</td>
+                <td class="duration" data-value="35000000">035ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_password_field_error(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="44035000">044ms</td>
+                <td class="duration" data-value="44035000">044ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_password_field_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="32738300">032ms</td>
+                <td class="duration" data-value="32738300">032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_results_category_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="16377600">016ms</td>
+                <td class="duration" data-value="16377600">016ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_results_page_text(java.lang.String)</td>
+                <td>13</td>
+                <td class="duration" data-value="1953752700">1s 953ms</td>
+                <td class="duration" data-value="150288669">150ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_results_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="244094800">244ms</td>
+                <td class="duration" data-value="244094800">244ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_results_value_text(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="141050900">141ms</td>
+                <td class="duration" data-value="28210180">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_search_heading_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="70516300">070ms</td>
+                <td class="duration" data-value="70516300">070ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_search_placeholder_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="35791000">035ms</td>
+                <td class="duration" data-value="35791000">035ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_text(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="51951600">051ms</td>
+                <td class="duration" data-value="51951600">051ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.i_see_trademe_page_text(java.lang.String)</td>
+                <td>96</td>
+                <td class="duration" data-value="612330500">612ms</td>
+                <td class="duration" data-value="6378442">006ms</td>
+                <td class="failed">19.79%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_brand(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_buy_now_price(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_colour(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_description(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_login(java.lang.String,java.lang.String)</td>
+                <td>2</td>
+                <td class="duration" data-value="84103630500">1m 24s 103ms</td>
+                <td class="duration" data-value="42051815250">42s 051ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_start_price(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_sub_title(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_title(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.list_item_update_captcha()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.load_computers_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="2772045600">2s 772ms</td>
+                <td class="duration" data-value="2772045600">2s 772ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.load_list_an_item_url()</td>
+                <td>2</td>
+                <td class="duration" data-value="3253336100">3s 253ms</td>
+                <td class="duration" data-value="1626668050">1s 626ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.load_url()</td>
+                <td>4</td>
+                <td class="duration" data-value="8363773200">8s 363ms</td>
+                <td class="duration" data-value="2090943300">2s 090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.navigate_back_to_the_login_page()</td>
+                <td>2</td>
+                <td class="duration" data-value="954297300">954ms</td>
+                <td class="duration" data-value="477148650">477ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.navigate_to_the_login_page()</td>
+                <td>4</td>
+                <td class="duration" data-value="8859230700">8s 859ms</td>
+                <td class="duration" data-value="2214807675">2s 214ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.select_size_dropdown(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_close_the_browser()</td>
+                <td>7</td>
+                <td class="duration" data-value="1452912200">1s 452ms</td>
+                <td class="duration" data-value="207558885">207ms</td>
+                <td class="failed">71.43%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_enters_data_click_login_button(java.lang.String,java.lang.String)</td>
+                <td>2</td>
+                <td class="duration" data-value="232707700">232ms</td>
+                <td class="duration" data-value="116353850">116ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_enters_search_input(java.lang.String)</td>
+                <td>4</td>
+                <td class="duration" data-value="820416000">820ms</td>
+                <td class="duration" data-value="205104000">205ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_is_successfully_logged_in()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_select_browser(java.lang.String)</td>
+                <td>7</td>
+                <td class="duration" data-value="4731627000">4s 731ms</td>
+                <td class="duration" data-value="675946714">675ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.TradeMeAppSteps.user_update_captcha()</td>
+                <td>2</td>
+                <td class="duration" data-value="15053624400">15s 053ms</td>
+                <td class="duration" data-value="7526812200">7s 526ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>58</td>
+              <td>219</td>
+              <td class="duration">2m 36s 249ms</td>
+              <td class="duration">713ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
