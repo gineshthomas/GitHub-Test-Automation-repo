@@ -1,0 +1,920 @@
+{
+	"info": {
+		"_postman_id": "c1177b2f-04c6-42f4-b781-730490397d65",
+		"name": "TSB-API-Exercise-Ginesh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34680448"
+	},
+	"item": [
+		{
+			"name": "TSB-TradeMe",
+			"item": [
+				{
+					"name": "GET-LatestListings",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Listings/Latest.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Listings",
+								"Latest.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Listing-General-item",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>3849</Category>\r\n  <Title>Arty surprise</Title>\r\n  <Description>\r\n    <Paragraph>All true art lovers will buy this.</Paragraph>\r\n  </Description>\r\n  <StartPrice>7</StartPrice>\r\n  <BuyNowPrice>9</BuyNowPrice>\r\n  <Duration>Seven</Duration>\r\n  <Pickup>Allow</Pickup>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <PhotoIds>\r\n    <PhotoId>12345678</PhotoId>\r\n  </PhotoIds>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Free</Type>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>CreditCard</PaymentMethod>\r\n    <PaymentMethod>Cash</PaymentMethod>\r\n  </PaymentMethods>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-Computers-Desktops",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>6911</Category>\r\n  <Title>Extreme PC XXX</Title>\r\n  <Subtitle>Lots of bang for your buck!</Subtitle>\r\n  <Description>\r\n    <Paragraph>This computer is the bees knees!</Paragraph>\r\n  </Description>\r\n  <StartPrice>400</StartPrice>\r\n  <ReservePrice>500</ReservePrice>\r\n  <BuyNowPrice>700</BuyNowPrice>\r\n  <Duration>Seven</Duration>\r\n  <Pickup>Forbid</Pickup>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <AuthenticatedMembersOnly>true</AuthenticatedMembersOnly>\r\n  <PhotoIds>\r\n    <PhotoId>12345678</PhotoId>\r\n  </PhotoIds>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Custom</Type>\r\n      <Price>5</Price>\r\n      <Method>Overnight courier (urban areas only)</Method>\r\n    </ShippingOption>\r\n    <ShippingOption>\r\n      <Type>Custom</Type>\r\n      <Price>8</Price>\r\n      <Method>Rural delivery (2-3 days)</Method>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>CreditCard</PaymentMethod>\r\n    <PaymentMethod>Cash</PaymentMethod>\r\n  </PaymentMethods>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>OpticalDrive</Name>\r\n      <Value>CDDVDwriter</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Cores</Name>\r\n      <Value>8</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>CPUSpeed</Name>\r\n      <Value>2.4</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>HardDrive</Name>\r\n      <Value>500</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Memory</Name>\r\n      <Value>4</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-Buy-Now-multiple variants",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>5530</Category>\r\n  <Title>Example MVL</Title>\r\n  <Description>\r\n    <Paragraph>The quick brown fox jumps over the lazy dog.</Paragraph>\r\n  </Description>\r\n  <Duration>Three</Duration>\r\n  <Pickup>Forbid</Pickup>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <PhotoIds>\r\n    <PhotoId>100000000</PhotoId>\r\n  </PhotoIds>\r\n  <VariantDefinition>\r\n    <OptionSets>\r\n      <OptionSet>\r\n        <Name>Size</Name>\r\n        <Values>\r\n          <Value>Small</Value>\r\n          <Value>Medium</Value>\r\n          <Value>Large</Value>\r\n        </Values>\r\n      </OptionSet>\r\n      <OptionSet>\r\n        <Name>Colour</Name>\r\n        <Values>\r\n          <Value>Blue</Value>\r\n          <Value>Red</Value>\r\n        </Values>\r\n      </OptionSet>\r\n    </OptionSets>\r\n    <Variants>\r\n      <Variant>\r\n        <SKU>PR-SB</SKU>\r\n        <Price>11</Price>\r\n        <Quantity>1</Quantity>\r\n        <PhotoIds>\r\n          <PhotoId>100000111</PhotoId>\r\n        </PhotoIds>\r\n        <Options>\r\n          <Option>\r\n            <Name>Size</Name>\r\n            <Value>Small</Value>\r\n          </Option>\r\n          <Option>\r\n            <Name>Colour</Name>\r\n            <Value>Blue</Value>\r\n          </Option>\r\n        </Options>\r\n      </Variant>\r\n      <Variant>\r\n        <SKU>PR-MR</SKU>\r\n        <Price>12</Price>\r\n        <Quantity>2</Quantity>\r\n        <PhotoIds>\r\n          <PhotoId>100000222</PhotoId>\r\n        </PhotoIds>\r\n        <Options>\r\n          <Option>\r\n            <Name>Size</Name>\r\n            <Value>Medium</Value>\r\n          </Option>\r\n          <Option>\r\n            <Name>Colour</Name>\r\n            <Value>Red</Value>\r\n          </Option>\r\n        </Options>\r\n      </Variant>\r\n      <Variant>\r\n        <SKU>PR-LR</SKU>\r\n        <Price>13</Price>\r\n        <Quantity>3</Quantity>\r\n        <PhotoIds>\r\n          <PhotoId>100000333</PhotoId>\r\n        </PhotoIds>\r\n        <Options>\r\n          <Option>\r\n            <Name>Size</Name>\r\n            <Value>Large</Value>\r\n          </Option>\r\n          <Option>\r\n            <Name>Colour</Name>\r\n            <Value>Red</Value>\r\n          </Option>\r\n        </Options>\r\n      </Variant>\r\n      <Variant>\r\n        <SKU>PR-LB</SKU>\r\n        <Price>14</Price>\r\n        <Quantity>4</Quantity>\r\n        <PhotoIds>\r\n          <PhotoId>100000444</PhotoId>\r\n        </PhotoIds>\r\n        <Options>\r\n          <Option>\r\n            <Name>Size</Name>\r\n            <Value>Large</Value>\r\n          </Option>\r\n          <Option>\r\n            <Name>Colour</Name>\r\n            <Value>Blue</Value>\r\n          </Option>\r\n        </Options>\r\n      </Variant>\r\n    </Variants>\r\n  </VariantDefinition>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-used-car",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>271</Category>\r\n  <Description>\r\n    <Paragraph>Looking for a bit of European thrill? Then why not take a look at this 2.0L 147kW Turbo Quattro Audi A4 wagon. Presented in superb condition with Moro Blue exterior with Chrome details.</Paragraph>\r\n  </Description>\r\n  <StartPrice>17985</StartPrice>\r\n  <Duration>Seven</Duration>\r\n  <Pickup>Allow</Pickup>\r\n  <SendPaymentInstructions>true</SendPaymentInstructions>\r\n  <IsBold>true</IsBold>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Free</Type>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>CreditCard</PaymentMethod>\r\n    <PaymentMethod>Cash</PaymentMethod>\r\n  </PaymentMethods>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>BestContactTime</Name>\r\n      <Value>Anytime</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BodyStyle</Name>\r\n      <Value>Sedan</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineSize</Name>\r\n      <Value>2000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ExteriorColour</Name>\r\n      <Value>Dark Blue</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>FuelType</Name>\r\n      <Value>Petrol</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Kilometres</Name>\r\n      <Value>61988</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Model</Name>\r\n      <Value>A4</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ModelDetail</Name>\r\n      <Value>FSI Quattro</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>NumberPlate</Name>\r\n      <Value>ABC123</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ShowNumberPlate</Name>\r\n      <Value>true</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>OnRoadCosts</Name>\r\n      <Value>true</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ApproximateValue</Name>\r\n      <Value>20000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Transmission</Name>\r\n      <Value>2</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>VIN</Name>\r\n      <Value>WAUZZZ8EX5A457186</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Year</Name>\r\n      <Value>2005</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>AirConditioning</Name>\r\n      <Value>true</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-motorboat",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>30</Category>\r\n  <Title>My fantastic boat</Title>\r\n  <Description>\r\n    <Paragraph>My fantastic boat can do all sorts of wonderful things.</Paragraph>\r\n  </Description>\r\n  <StartPrice>100</StartPrice>\r\n  <Duration>Seven</Duration>\r\n  <Pickup>Allow</Pickup>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Free</Type>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>CreditCard</PaymentMethod>\r\n    <PaymentMethod>Cash</PaymentMethod>\r\n  </PaymentMethods>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>BoatApproximateValue</Name>\r\n      <Value>10000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineHours</Name>\r\n      <Value>100</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BoatEngineSize</Name>\r\n      <Value>10</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineType</Name>\r\n      <Value>Outboard</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineYear</Name>\r\n      <Value>2000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Length</Name>\r\n      <Value>10</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>HullMaterial</Name>\r\n      <Value>Fibreglass</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BoatYear</Name>\r\n      <Value>2001</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BoatLocation</Name>\r\n      <Value>9</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-international-accommodation",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>9377</Category>\r\n  <Title>Hotel Italy</Title>\r\n  <Description>\r\n    <Paragraph>Italy on a budget.</Paragraph>\r\n  </Description>\r\n  <StartPrice>90</StartPrice>\r\n  <Duration>Seven</Duration>\r\n  <Pickup>Forbid</Pickup>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Free</Type>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>CreditCard</PaymentMethod>\r\n    <PaymentMethod>Cash</PaymentMethod>\r\n  </PaymentMethods>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>Country</Name>\r\n      <Value>Italy</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>NumberOfNights</Name>\r\n      <Value>1</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>StayPeriodStart</Name>\r\n      <Value>2015-1-1</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-motorbike-as-an-auction",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>2508</Category>\r\n  <Description>\r\n    <Paragraph>The best Audi you'll find anywhere!</Paragraph>\r\n  </Description>\r\n  <StartPrice>69.00</StartPrice>\r\n  <ReservePrice>69.00</ReservePrice>\r\n  <Duration>Three</Duration>\r\n  <Pickup>Forbid</Pickup>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <ShippingOptions>\r\n    <ShippingOption>\r\n      <Type>Custom</Type>\r\n      <Price>40.0</Price>\r\n      <Method>Courier NZ Wide</Method>\r\n    </ShippingOption>\r\n  </ShippingOptions>\r\n  <PaymentMethods>\r\n    <PaymentMethod>BankDeposit</PaymentMethod>\r\n  </PaymentMethods>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>BikeApproximateValue</Name>\r\n      <Value>500</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineSize</Name>\r\n      <Value>4500</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Kilometres</Name>\r\n      <Value>10000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BikeMake</Name>\r\n      <Value>Keeway</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BikeModel</Name>\r\n      <Value>K1200S</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>OnRoadCosts</Name>\r\n      <Value>True</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Year</Name>\r\n      <Value>2006</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-motorbike-as-a-classified",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>2508</Category>\r\n  <Description>\r\n    <Paragraph>The best Audi you'll find anywhere!</Paragraph>\r\n  </Description>\r\n  <StartPrice>100</StartPrice>\r\n  <Duration>Three</Duration>\r\n  <IsBrandNew>true</IsBrandNew>\r\n  <IsClassified>true</IsClassified>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>BikeApproximateValue</Name>\r\n      <Value>500</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>EngineSize</Name>\r\n      <Value>4500</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Kilometres</Name>\r\n      <Value>10000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BikeMake</Name>\r\n      <Value>Keeway</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>BikeModel</Name>\r\n      <Value>K1200S</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>OnRoadCosts</Name>\r\n      <Value>True</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Year</Name>\r\n      <Value>2006</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-residential-property-with-agent-names-and-open-homes-times",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>3399</Category>\r\n  <Title>House with some agents</Title>\r\n  <Description>\r\n    <Paragraph>Description</Paragraph>\r\n  </Description>\r\n  <Duration>FortyTwo</Duration>\r\n  <IsClassified>true</IsClassified>\r\n  <OpenHomes>\r\n    <OpenHome>\r\n      <Start>2013-09-02T01:30:00Z</Start>\r\n      <End>2013-09-02T02:00:00Z</End>\r\n    </OpenHome>\r\n    <OpenHome>\r\n      <Start>2013-09-02T22:30:00Z</Start>\r\n      <End>2013-09-02T23:00:00Z</End>\r\n    </OpenHome>\r\n  </OpenHomes>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>PropertyType</Name>\r\n      <Value>Apartment</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ExpectedSalePrice</Name>\r\n      <Value>500000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyPriceType</Name>\r\n      <Value>PriceByNegotiation</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Bedrooms</Name>\r\n      <Value>2</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Bathrooms</Name>\r\n      <Value>1</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Suburb</Name>\r\n      <Value>1244</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyStreetNumber</Name>\r\n      <Value>123</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyUnit</Name>\r\n      <Value>Unit B</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyStreetName</Name>\r\n      <Value>Sesame street</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n  <Contacts>\r\n    <Contact>\r\n      <FullName>Johnny Cash</FullName>\r\n      <PhoneNumber>037654321</PhoneNumber>\r\n      <AlternatePhoneNumber>0274641234</AlternatePhoneNumber>\r\n      <EMail>ABC@me.com</EMail>\r\n    </Contact>\r\n    <Contact>\r\n      <FullName>Sam Cooke</FullName>\r\n      <PhoneNumber>031234567</PhoneNumber>\r\n      <AlternatePhoneNumber>021987312</AlternatePhoneNumber>\r\n      <EMail>ABC123@me.com</EMail>\r\n    </Contact>\r\n  </Contacts>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-lifestyle-property-with-auto-extend",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<ListingRequest xmlns=\"http://api.trademe.co.nz/v1\">\r\n  <Category>9120</Category>\r\n  <Title>Lifestyle test listing</Title>\r\n  <Description>\r\n    <Paragraph>So sunny!</Paragraph>\r\n  </Description>\r\n  <Duration>UntilWithdrawn</Duration>\r\n  <IsClassified>true</IsClassified>\r\n  <Attributes>\r\n    <Attribute>\r\n      <Name>PropertyType</Name>\r\n      <Value>Dwelling</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>ExpectedSalePrice</Name>\r\n      <Value>500000</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyPriceType</Name>\r\n      <Value>Tender</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyPriceDate</Name>\r\n      <Value>2013-09-10T00:00:00Z</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Bedrooms</Name>\r\n      <Value>2</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Bathrooms</Name>\r\n      <Value>6</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>Suburb</Name>\r\n      <Value>1244</Value>\r\n    </Attribute>\r\n    <Attribute>\r\n      <Name>PropertyArea</Name>\r\n      <Value>5000</Value>\r\n    </Attribute>\r\n  </Attributes>\r\n</ListingRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New-Listing-test-example",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "PLAINTEXT",
+									"type": "string"
+								},
+								{
+									"key": "callback",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "5BD753AFED4134B7680793CCB7759D5B",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "8C1CA1F72C151ECDEBE1ADD8EBF95595",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "F197DECF26C7B0715FC4465833906D41",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "9F48DD50BF6E62C724D6E2BB3E1B9B36",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Category\": \"ABC\",\r\n  \"Title\": \"ABC\",\r\n  \"Subtitle\": \"ABC\",\r\n  \"Description\": [\r\n    \"ABC\",\r\n    \"ABC\"\r\n  ],\r\n  \"StartPrice\": 123.0,\r\n  \"ReservePrice\": 123.0,\r\n  \"BuyNowPrice\": 123.0,\r\n  \"Duration\": 0,\r\n  \"EndDateTime\": \"\\/Date(1514764800)\\/\",\r\n  \"Pickup\": 0,\r\n  \"PickupSuburbId\": 123,\r\n  \"IsBrandNew\": false,\r\n  \"AuthenticatedMembersOnly\": false,\r\n  \"IsClassified\": false,\r\n  \"OpenHomes\": [\r\n    {\r\n      \"Start\": \"\\/Date(1514764800)\\/\",\r\n      \"End\": \"\\/Date(1514764800)\\/\"\r\n    },\r\n    {\r\n      \"Start\": \"\\/Date(1514764800)\\/\",\r\n      \"End\": \"\\/Date(1514764800)\\/\"\r\n    }\r\n  ],\r\n  \"SendPaymentInstructions\": false,\r\n  \"OtherPaymentMethod\": \"ABC\",\r\n  \"IsOrNearOffer\": false,\r\n  \"IsPriceOnApplication\": false,\r\n  \"IsBold\": false,\r\n  \"IsFeatured\": false,\r\n  \"IsHomepageFeatured\": false,\r\n  \"HasGallery\": false,\r\n  \"HasGalleryPlus\": false,\r\n  \"Quantity\": 123,\r\n  \"IsFlatShippingCharge\": false,\r\n  \"HasAgreedWithLegalNotice\": false,\r\n  \"AutoRelistLimit\": 123,\r\n  \"HomePhoneNumber\": \"ABC\",\r\n  \"MobilePhoneNumber\": \"ABC\",\r\n  \"IsHighlighted\": false,\r\n  \"HasSuperFeature\": false,\r\n  \"PhotoIds\": [\r\n    123,\r\n    123\r\n  ],\r\n  \"ShippingOptions\": [\r\n    {\r\n      \"Type\": 0,\r\n      \"Price\": 123.0,\r\n      \"Method\": \"ABC\",\r\n      \"ShippingId\": 123,\r\n      \"TaxesIncluded\": [\r\n        {\r\n          \"Type\": 1,\r\n          \"Country\": \"ABC\",\r\n          \"Name\": \"ABC\",\r\n          \"FlatRate\": 123.0,\r\n          \"Description\": \"ABC\",\r\n          \"IsSellRestrictionsEffective\": false,\r\n          \"IsTaxEffective\": false,\r\n          \"IsApplied\": false,\r\n          \"TaxAmount\": 123.0,\r\n          \"WasPriceTaxAmount\": 123.0\r\n        },\r\n        {\r\n          \"Type\": 1,\r\n          \"Country\": \"ABC\",\r\n          \"Name\": \"ABC\",\r\n          \"FlatRate\": 123.0,\r\n          \"Description\": \"ABC\",\r\n          \"IsSellRestrictionsEffective\": false,\r\n          \"IsTaxEffective\": false,\r\n          \"IsApplied\": false,\r\n          \"TaxAmount\": 123.0,\r\n          \"WasPriceTaxAmount\": 123.0\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"Type\": 0,\r\n      \"Price\": 123.0,\r\n      \"Method\": \"ABC\",\r\n      \"ShippingId\": 123,\r\n      \"TaxesIncluded\": [\r\n        {\r\n          \"Type\": 1,\r\n          \"Country\": \"ABC\",\r\n          \"Name\": \"ABC\",\r\n          \"FlatRate\": 123.0,\r\n          \"Description\": \"ABC\",\r\n          \"IsSellRestrictionsEffective\": false,\r\n          \"IsTaxEffective\": false,\r\n          \"IsApplied\": false,\r\n          \"TaxAmount\": 123.0,\r\n          \"WasPriceTaxAmount\": 123.0\r\n        },\r\n        {\r\n          \"Type\": 1,\r\n          \"Country\": \"ABC\",\r\n          \"Name\": \"ABC\",\r\n          \"FlatRate\": 123.0,\r\n          \"Description\": \"ABC\",\r\n          \"IsSellRestrictionsEffective\": false,\r\n          \"IsTaxEffective\": false,\r\n          \"IsApplied\": false,\r\n          \"TaxAmount\": 123.0,\r\n          \"WasPriceTaxAmount\": 123.0\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"PaymentMethods\": [\r\n    0,\r\n    0\r\n  ],\r\n  \"Attributes\": [\r\n    {\r\n      \"Name\": \"ABC\",\r\n      \"DisplayName\": \"ABC\",\r\n      \"Value\": \"ABC\",\r\n      \"Type\": 0,\r\n      \"Range\": {\r\n        \"Lower\": \"ABC\",\r\n        \"Upper\": \"ABC\"\r\n      },\r\n      \"MaxStringLength\": 123,\r\n      \"Options\": [\r\n        {\r\n          \"Value\": \"ABC\",\r\n          \"Display\": \"ABC\",\r\n          \"Count\": 123\r\n        },\r\n        {\r\n          \"Value\": \"ABC\",\r\n          \"Display\": \"ABC\",\r\n          \"Count\": 123\r\n        }\r\n      ],\r\n      \"Units\": [\r\n        {\r\n          \"Display\": \"ABC\",\r\n          \"Multiplier\": 123.0\r\n        },\r\n        {\r\n          \"Display\": \"ABC\",\r\n          \"Multiplier\": 123.0\r\n        }\r\n      ],\r\n      \"Unit\": \"ABC\",\r\n      \"IsRequiredForSell\": false,\r\n      \"GroupName\": \"ABC\",\r\n      \"DisplayValue\": \"ABC\"\r\n    },\r\n    {\r\n      \"Name\": \"ABC\",\r\n      \"DisplayName\": \"ABC\",\r\n      \"Value\": \"ABC\",\r\n      \"Type\": 0,\r\n      \"Range\": {\r\n        \"Lower\": \"ABC\",\r\n        \"Upper\": \"ABC\"\r\n      },\r\n      \"MaxStringLength\": 123,\r\n      \"Options\": [\r\n        {\r\n          \"Value\": \"ABC\",\r\n          \"Display\": \"ABC\",\r\n          \"Count\": 123\r\n        },\r\n        {\r\n          \"Value\": \"ABC\",\r\n          \"Display\": \"ABC\",\r\n          \"Count\": 123\r\n        }\r\n      ],\r\n      \"Units\": [\r\n        {\r\n          \"Display\": \"ABC\",\r\n          \"Multiplier\": 123.0\r\n        },\r\n        {\r\n          \"Display\": \"ABC\",\r\n          \"Multiplier\": 123.0\r\n        }\r\n      ],\r\n      \"Unit\": \"ABC\",\r\n      \"IsRequiredForSell\": false,\r\n      \"GroupName\": \"ABC\",\r\n      \"DisplayValue\": \"ABC\"\r\n    }\r\n  ],\r\n  \"IsClearance\": false,\r\n  \"ExternalReferenceId\": \"ABC\",\r\n  \"Contacts\": [\r\n    {\r\n      \"FullName\": \"ABC\",\r\n      \"PhoneNumber\": \"ABC\",\r\n      \"AlternatePhoneNumber\": \"ABC\",\r\n      \"EMail\": \"ABC\",\r\n      \"BrandingImageId\": 123,\r\n      \"AgentId\": \"ABC\",\r\n      \"AgencyName\": \"ABC\",\r\n      \"ShouldContact\": 0\r\n    },\r\n    {\r\n      \"FullName\": \"ABC\",\r\n      \"PhoneNumber\": \"ABC\",\r\n      \"AlternatePhoneNumber\": \"ABC\",\r\n      \"EMail\": \"ABC\",\r\n      \"BrandingImageId\": 123,\r\n      \"AgentId\": \"ABC\",\r\n      \"AgencyName\": \"ABC\",\r\n      \"ShouldContact\": 0\r\n    }\r\n  ],\r\n  \"ReturnListingDetails\": false,\r\n  \"DonationRecipient\": 0,\r\n  \"CatalogueId\": \"ABC\",\r\n  \"RemainingGalleryPlusRelists\": 123,\r\n  \"PromotionId\": 123,\r\n  \"ExcludeFromShippingPromotion\": false,\r\n  \"SKU\": \"ABC\",\r\n  \"AvailablePromotions\": [\r\n    {\r\n      \"Id\": 123,\r\n      \"Name\": \"ABC\",\r\n      \"Description\": \"ABC\",\r\n      \"LongDescription\": \"ABC\",\r\n      \"Price\": 123.0,\r\n      \"OriginalPrice\": 123.0,\r\n      \"Recommended\": false,\r\n      \"MinimumPhotoCount\": 123,\r\n      \"DiscountDescription\": \"ABC\",\r\n      \"DiscountStartDate\": \"ABC\",\r\n      \"DiscountEndDate\": \"ABC\",\r\n      \"DiscountDisclaimer\": \"ABC\",\r\n      \"GoodFor2RelistsFee\": 123.0\r\n    },\r\n    {\r\n      \"Id\": 123,\r\n      \"Name\": \"ABC\",\r\n      \"Description\": \"ABC\",\r\n      \"LongDescription\": \"ABC\",\r\n      \"Price\": 123.0,\r\n      \"OriginalPrice\": 123.0,\r\n      \"Recommended\": false,\r\n      \"MinimumPhotoCount\": 123,\r\n      \"DiscountDescription\": \"ABC\",\r\n      \"DiscountStartDate\": \"ABC\",\r\n      \"DiscountEndDate\": \"ABC\",\r\n      \"DiscountDisclaimer\": \"ABC\",\r\n      \"GoodFor2RelistsFee\": 123.0\r\n    }\r\n  ],\r\n  \"ImmutableFields\": [\r\n    \"ABC\",\r\n    \"ABC\"\r\n  ],\r\n  \"GeographicLocation\": {\r\n    \"Latitude\": 123.0,\r\n    \"Longitude\": 123.0,\r\n    \"Accuracy\": 0\r\n  },\r\n  \"WasPrice\": 123.0,\r\n  \"EmbeddedContent\": {\r\n    \"YouTubeVideoKey\": \"ABC\",\r\n    \"MatterportKey\": \"ABC\",\r\n    \"IStagingKey\": \"ABC\",\r\n    \"VimeoVideoKey\": \"ABC\",\r\n    \"DiakritFurnishKey\": \"ABC\",\r\n    \"DiakritStylerKey\": \"ABC\",\r\n    \"DiakritPanoramaKey\": \"ABC\",\r\n    \"VirtualToursCreatorKey\": \"ABC\",\r\n    \"Approved3DTourUrl\": \"ABC\"\r\n  },\r\n  \"IsBranded\": false,\r\n  \"ShortDescription\": \"ABC\",\r\n  \"ShippingCalculatorInputs\": {\r\n    \"IsBoxType\": false,\r\n    \"Width\": 123.0,\r\n    \"Height\": 123.0,\r\n    \"Depth\": 123.0,\r\n    \"IsSignatureRequired\": false,\r\n    \"PickupLocalityId\": 123,\r\n    \"IsRural\": false,\r\n    \"PackagingOption\": 1,\r\n    \"WeightOption\": 1,\r\n    \"FilterOption\": 0\r\n  },\r\n  \"AdditionalData\": {\r\n    \"BulletPoints\": [\r\n      \"ABC\",\r\n      \"ABC\"\r\n    ],\r\n    \"Tags\": [\r\n      {\r\n        \"Name\": \"ABC\"\r\n      },\r\n      {\r\n        \"Name\": \"ABC\"\r\n      }\r\n    ]\r\n  },\r\n  \"VariantDefinition\": {\r\n    \"OptionSets\": [\r\n      {\r\n        \"Name\": \"ABC\",\r\n        \"Values\": [\r\n          \"ABC\",\r\n          \"ABC\"\r\n        ]\r\n      },\r\n      {\r\n        \"Name\": \"ABC\",\r\n        \"Values\": [\r\n          \"ABC\",\r\n          \"ABC\"\r\n        ]\r\n      }\r\n    ],\r\n    \"Variants\": [\r\n      {\r\n        \"SKU\": \"ABC\",\r\n        \"Price\": 123.0,\r\n        \"IsClearance\": false,\r\n        \"WasPrice\": 123.0,\r\n        \"Quantity\": 123,\r\n        \"PhotoIds\": [\r\n          123,\r\n          123\r\n        ],\r\n        \"Photos\": [\r\n          {\r\n            \"Key\": 123,\r\n            \"Value\": {\r\n              \"Thumbnail\": \"ABC\",\r\n              \"List\": \"ABC\",\r\n              \"Medium\": \"ABC\",\r\n              \"Gallery\": \"ABC\",\r\n              \"Large\": \"ABC\",\r\n              \"FullSize\": \"ABC\",\r\n              \"PlusSize\": \"ABC\",\r\n              \"PhotoId\": 123,\r\n              \"OriginalWidth\": 123,\r\n              \"OriginalHeight\": 123\r\n            }\r\n          },\r\n          {\r\n            \"Key\": 123,\r\n            \"Value\": {\r\n              \"Thumbnail\": \"ABC\",\r\n              \"List\": \"ABC\",\r\n              \"Medium\": \"ABC\",\r\n              \"Gallery\": \"ABC\",\r\n              \"Large\": \"ABC\",\r\n              \"FullSize\": \"ABC\",\r\n              \"PlusSize\": \"ABC\",\r\n              \"PhotoId\": 123,\r\n              \"OriginalWidth\": 123,\r\n              \"OriginalHeight\": 123\r\n            }\r\n          }\r\n        ],\r\n        \"Options\": [\r\n          {\r\n            \"Name\": \"ABC\",\r\n            \"Value\": \"ABC\"\r\n          },\r\n          {\r\n            \"Name\": \"ABC\",\r\n            \"Value\": \"ABC\"\r\n          }\r\n        ],\r\n        \"Attributes\": [\r\n          {\r\n          },\r\n          {\r\n          }\r\n        ],\r\n        \"ListingId\": 123,\r\n        \"ExternalReferenceId\": \"ABC\",\r\n        \"ProductSpecification\": {\r\n          \"GTIN\": \"ABC\",\r\n          \"Brand\": \"ABC\",\r\n          \"ManufacturerCode\": \"ABC\"\r\n        }\r\n      },\r\n      {\r\n        \"SKU\": \"ABC\",\r\n        \"Price\": 123.0,\r\n        \"IsClearance\": false,\r\n        \"WasPrice\": 123.0,\r\n        \"Quantity\": 123,\r\n        \"PhotoIds\": [\r\n          123,\r\n          123\r\n        ],\r\n        \"Photos\": [\r\n          {\r\n            \"Key\": 123,\r\n            \"Value\": {\r\n              \"Thumbnail\": \"ABC\",\r\n              \"List\": \"ABC\",\r\n              \"Medium\": \"ABC\",\r\n              \"Gallery\": \"ABC\",\r\n              \"Large\": \"ABC\",\r\n              \"FullSize\": \"ABC\",\r\n              \"PlusSize\": \"ABC\",\r\n              \"PhotoId\": 123,\r\n              \"OriginalWidth\": 123,\r\n              \"OriginalHeight\": 123\r\n            }\r\n          },\r\n          {\r\n            \"Key\": 123,\r\n            \"Value\": {\r\n              \"Thumbnail\": \"ABC\",\r\n              \"List\": \"ABC\",\r\n              \"Medium\": \"ABC\",\r\n              \"Gallery\": \"ABC\",\r\n              \"Large\": \"ABC\",\r\n              \"FullSize\": \"ABC\",\r\n              \"PlusSize\": \"ABC\",\r\n              \"PhotoId\": 123,\r\n              \"OriginalWidth\": 123,\r\n              \"OriginalHeight\": 123\r\n            }\r\n          }\r\n        ],\r\n        \"Options\": [\r\n          {\r\n            \"Name\": \"ABC\",\r\n            \"Value\": \"ABC\"\r\n          },\r\n          {\r\n            \"Name\": \"ABC\",\r\n            \"Value\": \"ABC\"\r\n          }\r\n        ],\r\n        \"Attributes\": [\r\n          {\r\n          },\r\n          {\r\n          }\r\n        ],\r\n        \"ListingId\": 123,\r\n        \"ExternalReferenceId\": \"ABC\",\r\n        \"ProductSpecification\": {\r\n          \"GTIN\": \"ABC\",\r\n          \"Brand\": \"ABC\",\r\n          \"ManufacturerCode\": \"ABC\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"SecondCategory\": \"ABC\",\r\n  \"PremiumPackageCode\": \"ABC\",\r\n  \"ProductSpecification\": {\r\n  },\r\n  \"ListingExtras\": [\r\n    {\r\n      \"Id\": 123,\r\n      \"Name\": \"ABC\",\r\n      \"Variant\": \"ABC\",\r\n      \"StartDate\": \"\\/Date(1514764800)\\/\",\r\n      \"EndDate\": \"\\/Date(1514764800)\\/\",\r\n      \"Description\": \"ABC\",\r\n      \"Duration\": 123,\r\n      \"Delay\": 123\r\n    },\r\n    {\r\n      \"Id\": 123,\r\n      \"Name\": \"ABC\",\r\n      \"Variant\": \"ABC\",\r\n      \"StartDate\": \"\\/Date(1514764800)\\/\",\r\n      \"EndDate\": \"\\/Date(1514764800)\\/\",\r\n      \"Description\": \"ABC\",\r\n      \"Duration\": 123,\r\n      \"Delay\": 123\r\n    }\r\n  ],\r\n  \"ListingExtrasLedger\": [\r\n    {\r\n    },\r\n    {\r\n    }\r\n  ],\r\n  \"HasGoodFor2Relists\": false,\r\n  \"IsCounterOffersAllowed\": false,\r\n  \"MaximumOffers\": 123,\r\n  \"ShippingTemplateId\": 123,\r\n  \"Photos\": [\r\n    {\r\n      \"Key\": 123,\r\n      \"Value\": {\r\n      }\r\n    },\r\n    {\r\n      \"Key\": 123,\r\n      \"Value\": {\r\n      }\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Selling.JSON",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Selling.JSON"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This is the exercise tests for TSB. API - TradeMe"
+		}
+	]
+}
