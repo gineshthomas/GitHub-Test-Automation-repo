@@ -9,7 +9,7 @@ Test scripts details:
 ** Test details (below); 
    1. Customer Login Scenarios: - added 3 scenarios for the feature (CustomerLogin.feature) - one to test valid and invalid login functionalities; next to test login page UI validations and the final to verify page error validations.
    2. Basic Search Functionality: - added 1 scenario for the feature (SearchComputersBasic.feature)- Checks the search functionalities within 'Computers category' - validates functionalities and page UI validations
-   3. Listing an Item: - Added 1 scenario for the feature (ListAnItemGeneral.feature) - Checks the workflow of Listing a generic item includiing pagewise validations.  
+   3. Listing an Item: - Added 2 scenarios for the feature (ListAnItemGeneral.feature) - Checks the workflow of Listing a generic item includiing pagewise validations and the other page error validations 
 
 Test Execution details:
 **Browser drivers for the browsers (Chrome/Firefox/Edge) are available in the folder >> \TradeMeAppExercise\src\test\resources\drivers
